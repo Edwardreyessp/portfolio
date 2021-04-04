@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  width: 100vw;
+  background: steelblue;
+  color: white;
+  height: 4rem;
+}
+header .container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+header nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#about {
+  background: #c5e0e9;
+}
+#about .container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30rem;
+}
+#about .container .info {
+  width: 48%;
+}
+#about .container .info h2 {
+  color: steelblue;
+  margin-bottom: 1rem;
+}
+#about .container .info p {
+  margin-bottom: 1rem;
+}
+#about .container .info .actions button {
+  margin-right: 1rem;
+  color: white;
+  background: steelblue;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+#about .container .image {
+  width: 48%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#about .container .image figure {
+  width: 50%;
+}
+#about .container .image figure img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=index.41e4b3cf.css.map */
