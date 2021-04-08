@@ -216,7 +216,7 @@ header nav a:hover {
   margin-right: 0.5rem;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
   header {
     height: 6rem;
   }
@@ -232,7 +232,7 @@ header nav a:hover {
     justify-content: space-evenly;
     align-items: flex-start;
     margin-top: 5rem;
-    height: 23rem;
+    height: 30rem;
   }
   #home .container .info .actions button {
     margin-bottom: 0.5rem;
@@ -245,7 +245,7 @@ header nav a:hover {
   }
 
   #about {
-    margin: 5rem 0;
+    margin: 3rem 0;
   }
   #about .container {
     width: 90%;
@@ -267,56 +267,56 @@ header nav a:hover {
     width: 0rem;
   }
   #about .container .oneHundred-final {
-    width: 15rem;
+    width: 7rem;
     transition: all 2s ease;
   }
   #about .container .ninety {
     width: 0rem;
   }
   #about .container .ninety-final {
-    width: 13.5rem;
+    width: 6.3rem;
     transition: all 2s ease;
   }
   #about .container .eigthy {
     width: 0rem;
   }
   #about .container .eigthy-final {
-    width: 12rem;
+    width: 5.6rem;
     transition: all 2s ease;
   }
   #about .container .seventyFive {
     width: 0rem;
   }
   #about .container .seventyFive-final {
-    width: 11.25rem;
+    width: 5.25rem;
     transition: all 2s ease;
   }
   #about .container .seventy {
     width: 0rem;
   }
   #about .container .seventy-final {
-    width: 10.5rem;
+    width: 4.9rem;
     transition: all 2s ease;
   }
   #about .container .fifty {
     width: 0rem;
   }
   #about .container .fifty-final {
-    width: 7.5rem;
+    width: 3.5rem;
     transition: all 2s ease;
   }
   #about .container .forty {
     width: 0rem;
   }
   #about .container .forty-final {
-    width: 6rem;
+    width: 2.8rem;
     transition: all 2s ease;
   }
   #about .container .ten {
     width: 0rem;
   }
   #about .container .ten-final {
-    width: 1.5rem;
+    width: 0.7rem;
     transition: all 2s ease;
   }
 }
