@@ -3,3 +3,10 @@
   max-width: 1500px;
   margin: 0 auto;
 }
+
+@mixin progressBar {
+  margin: 0 0.3rem 0 2rem;
+  height: 0.5rem;
+  background-color: steelblue;
+  border-radius: 0.2rem;
+}

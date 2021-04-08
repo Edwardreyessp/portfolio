@@ -1,3 +1,135 @@
 @import "global";
 @import "header";
+@import "home";
 @import "about";
+@import "projects";
+@import "social";
+
+@media (max-width: 500px) {
+  header {
+    height: 6rem;
+
+    .container {
+      display: grid;
+      a {
+        margin-left: 0;
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  #home {
+    .container {
+      justify-content: space-evenly;
+      align-items: flex-start;
+      margin-top: 5rem;
+      height: 23rem;
+
+      .info {
+        .actions {
+          button {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+
+      .image {
+        justify-content: center;
+
+        figure {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  #about {
+    margin: 5rem 0;
+    .container {
+      @include container;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 5rem;
+
+      /*100%*/
+      .oneHundred {
+        width: 0rem;
+      }
+
+      .oneHundred-final {
+        width: 15rem;
+        transition: all 2s ease;
+      }
+
+      /*90%*/
+      .ninety {
+        width: 0rem;
+      }
+
+      .ninety-final {
+        width: 13.5rem;
+        transition: all 2s ease;
+      }
+
+      /*80%*/
+      .eigthy {
+        width: 0rem;
+      }
+
+      .eigthy-final {
+        width: 12rem;
+        transition: all 2s ease;
+      }
+
+      /*75%*/
+      .seventyFive {
+        width: 0rem;
+      }
+
+      .seventyFive-final {
+        width: 11.25rem;
+        transition: all 2s ease;
+      }
+
+      /*70%*/
+      .seventy {
+        width: 0rem;
+      }
+
+      .seventy-final {
+        width: 10.5rem;
+        transition: all 2s ease;
+      }
+
+      /*50%*/
+      .fifty {
+        width: 0rem;
+      }
+
+      .fifty-final {
+        width: 7.5rem;
+        transition: all 2s ease;
+      }
+
+      /*40%*/
+      .forty {
+        width: 0rem;
+      }
+
+      .forty-final {
+        width: 6rem;
+        transition: all 2s ease;
+      }
+
+      /*10%*/
+      .ten {
+        width: 0rem;
+      }
+
+      .ten-final {
+        width: 1.5rem;
+        transition: all 2s ease;
+      }
+    }
+  }
+}

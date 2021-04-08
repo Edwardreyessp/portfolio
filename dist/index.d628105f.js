@@ -140,12 +140,12 @@
       this[globalName] = mainExports;
     }
   }
-})({"5Ff7C":[function(require,module,exports) {
+})({"5No7Q":[function(require,module,exports) {
 var HMR_HOST = null;
 var HMR_PORT = 3001;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d751713988987e9331980363e24189ce";
-module.bundle.HMR_BUNDLE_ID = "4fb15865dc2eb890de8cbe31e1f40d62";
+module.bundle.HMR_BUNDLE_ID = "8955d334dd4591124bc2ea32d628105f";
 // @flow
 /*global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE*/
 /*::
@@ -441,25 +441,28 @@ id) /*: string*/
   acceptedAssets[id] = true;
 }
 
-},{}],"5jkUb":[function(require,module,exports) {
-const animar = () => {
-  document.getElementById("barSpanish").classList.toggle("oneHundred-final");
-  document.getElementById("barHtml").classList.toggle("ninety-final");
-  document.getElementById("barC").classList.toggle("eigthy-final");
-  document.getElementById("barJava").classList.toggle("eigthy-final");
-  document.getElementById("barToon").classList.toggle("eigthy-final");
-  document.getElementById("barEnglish").classList.toggle("seventyFive-final");
-  document.getElementById("barPs").classList.toggle("seventyFive-final");
-  document.getElementById("barDraw").classList.toggle("seventyFive-final");
-  document.getElementById("barJs").classList.toggle("seventy-final");
-  document.getElementById("barCss").classList.toggle("seventy-final");
-  document.getElementById("barSass").classList.toggle("seventy-final");
-  document.getElementById("barResolve").classList.toggle("fifty-final");
-  document.getElementById("barMaya").classList.toggle("forty-final");
-  document.getElementById("barJapanese").classList.toggle("ten-final");
-};
-animar();
+},{}],"71RR3":[function(require,module,exports) {
+ScrollReveal().reveal('.header')
+ScrollReveal().reveal('.home')
 
-},{}]},["5Ff7C","5jkUb"], "5jkUb", "parcelRequire337b")
+const a = ScrollReveal().reveal('.languages', {delay: 200})
+a.addEventListener('scroll', (event) => {
+    document.getElementById("barSpanish").classList.toggle("oneHundred-final")
+document.getElementById("barEnglish").classList.toggle("seventyFive-final")
+document.getElementById("barJapanese").classList.toggle("ten-final")
+})
 
-//# sourceMappingURL=index.e1f40d62.js.map
+ScrollReveal().reveal('.progSkills', {delay: 200});
+document.getElementById("barHtml").classList.toggle("ninety-final")
+document.getElementById("barC").classList.toggle("eigthy-final")
+document.getElementById("barJava").classList.toggle("eigthy-final")
+document.getElementById("barJs").classList.toggle("seventy-final")
+    document.getElementById("barCss").classList.toggle("seventy-final")
+    document.getElementById("barSass").classList.toggle("seventy-final")
+
+ScrollReveal().reveal('.hobbies', {delay: 200});
+ScrollReveal().reveal('.editSkills', {delay: 200});
+ScrollReveal().reveal('.social', {delay: 200});
+},{}]},["5No7Q","71RR3"], "71RR3", "parcelRequire337b")
+
+//# sourceMappingURL=index.d628105f.js.map

@@ -1,52 +1,112 @@
-@import "mixins";
-
 #about {
-  background: rgb(197, 224, 233);
+  margin: 5rem 0;
   .container {
     @include container;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
 
-    .info {
-      width: 48%;
+    section {
+      display: flex;
+      align-items: center;
 
-      h2 {
-        color: steelblue;
-        margin-bottom: 1rem;
-      }
-
-      p {
-        margin-bottom: 1rem;
-      }
-
-      .actions {
-        button {
-          margin-right: 1rem;
-          color: white;
-          background: steelblue;
-          padding: 0.3rem 0.6rem;
-          border: none;
-          border-radius: 0.3rem;
-        }
+      div {
+        @include progressBar;
       }
     }
 
-    .image {
-      width: 48%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
+    h1 {
+      margin-bottom: 1.5rem;
+    }
 
-      figure {
-        width: 50%;
-        img {
-          width: 100%;
-          max-width: 100%;
-          border-radius: 50%;
-        }
-      }
+    p {
+      margin: 0.3rem 0;
+      width: 6rem;
+    }
+
+    i {
+      margin: 0 0.3rem 0 2rem;
+      font-size: 1.2rem;
+    }
+
+    /*100%*/
+    .oneHundred {
+      width: 0rem;
+    }
+
+    .oneHundred-final {
+      width: 20rem;
+      transition: all 2s ease;
+    }
+
+    /*90%*/
+    .ninety {
+      width: 0rem;
+    }
+
+    .ninety-final {
+      width: 18rem;
+      transition: all 2s ease;
+    }
+
+    /*80%*/
+    .eigthy {
+      width: 0rem;
+    }
+
+    .eigthy-final {
+      width: 16rem;
+      transition: all 2s ease;
+    }
+
+    /*75%*/
+    .seventyFive {
+      width: 0rem;
+    }
+
+    .seventyFive-final {
+      width: 15rem;
+      transition: all 2s ease;
+    }
+
+    /*70%*/
+    .seventy {
+      width: 0rem;
+    }
+
+    .seventy-final {
+      width: 14rem;
+      transition: all 2s ease;
+    }
+
+    /*50%*/
+    .fifty {
+      width: 0rem;
+    }
+
+    .fifty-final {
+      width: 10rem;
+      transition: all 2s ease;
+    }
+
+    /*40%*/
+    .forty {
+      width: 0rem;
+    }
+
+    .forty-final {
+      width: 8rem;
+      transition: all 2s ease;
+    }
+
+    /*10%*/
+    .ten {
+      width: 0rem;
+    }
+
+    .ten-final {
+      width: 2rem;
+      transition: all 2s ease;
     }
   }
 }

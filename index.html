@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Main-->
     <link rel="stylesheet" href="./scss/main.scss">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
 <body>
@@ -19,12 +23,13 @@
                 <a href="#header">Home</a>
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
+                <a href="#social">Social</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="about">
+        <section id="home">
             <div class="container">
                 <div class="info">
                     <h2>Hello! I'm Edward</h2>
@@ -39,13 +44,149 @@
                 </div>
                 <div class="image">
                     <figure>
-                        <img src="https://picsum.photos/500" alt="Edward">
+                        <img src="Perfil.jpg" alt="Edward">
                     </figure>
                 </div>
             </div>
         </section>
-        <section id="projects"></section>
+
+        <hr>
+
+        <section id="about">
+            <div class="container">
+                <div class="languages">
+                    <h1>Languages</h1>
+                    <section>
+                        <p>Spanish</p>
+                        <div id="barSpanish" class="oneHundred"></div>
+                        <p>100%</p>
+                    </section>
+                    <section>
+                        <p>English</p>
+                        <div id="barEnglish" class="seventyFive"></div>
+                        <p>75%</p>
+                    </section>
+                    <section>
+                        <p>Japanese</p>
+                        <div id="barJapanese" class="ten"></div>
+                        <p>10%</p>
+                    </section>
+                </div>
+                <div class="progSkills">
+                    <h1>Programming Skills</h1>
+                    <section>
+                        <p>HTML</p>
+                        <div id="barHtml" class="ninety"></div>
+                        <p>90%</p>
+                    </section>
+                    <section>
+                        <p>C</p>
+                        <div id="barC" class="eigthy"></div>
+                        <p>80%</p>
+                    </section>
+                    <section>
+                        <p>Java</p>
+                        <div id="barJava" class="eigthy"></div>
+                        <p>80%</p>
+                    </section>
+                    <section>
+                        <p>JavaScript</p>
+                        <div id="barJs" class="seventy"></div>
+                        <p>70%</p>
+                    </section>
+                    <section>
+                        <p>CSS</p>
+                        <div id="barCss" class="seventy"></div>
+                        <p>70%</p>
+                    </section>
+                    <section>
+                        <p>Sass</p>
+                        <div id="barSass" class="seventy"></div>
+                        <p>70%</p>
+                    </section>
+                </div>
+                <div class="hobbies">
+                    <h1>Hobbies</h1>
+                    <section>
+                        <p>Programing</p>
+                        <i class="fas fa-code"></i>
+                    </section>
+                    <section>
+                        <p>Reading</p>
+                        <i class="fas fa-book"></i>
+                    </section>
+                    <section>
+                        <p>Gaming</p>
+                        <i class="fas fa-gamepad"></i>
+                    </section>
+                </div>
+                <div class="editSkills">
+                    <h1>Edition Skills</h1>
+                    <section>
+                        <p>Toon Boom</p>
+                        <div id="barToon" class="eigthy"></div>
+                        <p>80%</p>
+                    </section>
+                    <section>
+                        <p>Photoshop</p>
+                        <div id="barPs" class="seventyFive"></div>
+                        <p>75%</p>
+                    </section>
+                    <section>
+                        <p>Drawing</p>
+                        <div id="barDraw" class="seventyFive"></div>
+                        <p>75%</p>
+                    </section>
+                    <section>
+                        <p>Da Vinci Resolve</p>
+                        <div id="barResolve" class="fifty"></div>
+                        <p>50%</p>
+                    </section>
+                    <section>
+                        <p>Autodesk Maya</p>
+                        <div id="barMaya" class="forty"></div>
+                        <p>40%</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--<section id="projects">
+            <div class="container">
+                <p>Hola</p>
+            </div>
+        </section>-->
     </main>
+
+    <footer>
+        <section id="social">
+            <div class="container">
+                <section class="media">
+                    <a target="_blank" href="https://www.instagram.com/01animetion/?hl=es-la">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/EDWARDREYESSP/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/edwardreyessp">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/edwardreyes131018/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a target="_blank" href="https://github.com/Edwardreyessp">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </section>
+                <section class="mail">
+                    <i class="far fa-envelope"></i>
+                    <p>Contact me by email: edwardreyessp@gmail.com</p>
+                </section>
+            </div>
+        </section>
+    </footer>
 
     <script src="./ts/main.ts"></script>
 </body>

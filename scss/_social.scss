@@ -1,0 +1,30 @@
+#social {
+  background-color: lightgray;
+  height: 10rem;
+
+  .container {
+    @include container;
+    padding: 1.5rem 0;
+
+    .media {
+      display: flex;
+
+      a {
+        color: black;
+        font-size: 2rem;
+        margin-right: 2rem;
+      }
+    }
+
+    .mail {
+      display: flex;
+      margin-top: 1rem;
+      align-items: center;
+
+      i {
+        font-size: 2rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

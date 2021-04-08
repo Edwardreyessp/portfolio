@@ -5,6 +5,10 @@
   font-family: "Inter", sans-serif;
 }
 
+body {
+  background: #c5e0e9;
+}
+
 header {
   width: 100vw;
   background: steelblue;
@@ -26,11 +30,12 @@ header nav a {
   text-decoration: none;
   font-weight: 700;
 }
-
-#about {
-  background: #c5e0e9;
+header nav a:hover {
+  opacity: 0.8;
+  border-bottom: 2px solid white;
 }
-#about .container {
+
+#home .container {
   width: 90%;
   max-width: 1500px;
   margin: 0 auto;
@@ -39,17 +44,17 @@ header nav a {
   align-items: center;
   height: 30rem;
 }
-#about .container .info {
+#home .container .info {
   width: 48%;
 }
-#about .container .info h2 {
+#home .container .info h2 {
   color: steelblue;
   margin-bottom: 1rem;
 }
-#about .container .info p {
+#home .container .info p {
   margin-bottom: 1rem;
 }
-#about .container .info .actions button {
+#home .container .info .actions button {
   margin-right: 1rem;
   color: white;
   background: steelblue;
@@ -57,18 +62,262 @@ header nav a {
   border: none;
   border-radius: 0.3rem;
 }
-#about .container .image {
+#home .container .info .actions button:hover {
+  opacity: 0.7;
+}
+#home .container .image {
   width: 48%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-#about .container .image figure {
+#home .container .image figure {
   width: 50%;
 }
-#about .container .image figure img {
+#home .container .image figure img {
   width: 100%;
   max-width: 100%;
   border-radius: 50%;
+  border: solid 5px steelblue;
+}
+
+#about {
+  margin: 5rem 0;
+}
+#about .container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  /*100%*/
+  /*90%*/
+  /*80%*/
+  /*75%*/
+  /*70%*/
+  /*50%*/
+  /*40%*/
+  /*10%*/
+}
+#about .container section {
+  display: flex;
+  align-items: center;
+}
+#about .container section div {
+  margin: 0 0.3rem 0 2rem;
+  height: 0.5rem;
+  background-color: steelblue;
+  border-radius: 0.2rem;
+}
+#about .container h1 {
+  margin-bottom: 1.5rem;
+}
+#about .container p {
+  margin: 0.3rem 0;
+  width: 6rem;
+}
+#about .container i {
+  margin: 0 0.3rem 0 2rem;
+  font-size: 1.2rem;
+}
+#about .container .oneHundred {
+  width: 0rem;
+}
+#about .container .oneHundred-final {
+  width: 20rem;
+  transition: all 2s ease;
+}
+#about .container .ninety {
+  width: 0rem;
+}
+#about .container .ninety-final {
+  width: 18rem;
+  transition: all 2s ease;
+}
+#about .container .eigthy {
+  width: 0rem;
+}
+#about .container .eigthy-final {
+  width: 16rem;
+  transition: all 2s ease;
+}
+#about .container .seventyFive {
+  width: 0rem;
+}
+#about .container .seventyFive-final {
+  width: 15rem;
+  transition: all 2s ease;
+}
+#about .container .seventy {
+  width: 0rem;
+}
+#about .container .seventy-final {
+  width: 14rem;
+  transition: all 2s ease;
+}
+#about .container .fifty {
+  width: 0rem;
+}
+#about .container .fifty-final {
+  width: 10rem;
+  transition: all 2s ease;
+}
+#about .container .forty {
+  width: 0rem;
+}
+#about .container .forty-final {
+  width: 8rem;
+  transition: all 2s ease;
+}
+#about .container .ten {
+  width: 0rem;
+}
+#about .container .ten-final {
+  width: 2rem;
+  transition: all 2s ease;
+}
+
+#projects {
+  border: solid 1px black;
+  margin: 5rem 0;
+}
+#projects .container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#social {
+  background-color: lightgray;
+  height: 10rem;
+}
+#social .container {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+#social .container .media {
+  display: flex;
+}
+#social .container .media a {
+  color: black;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+#social .container .mail {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+#social .container .mail i {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 6rem;
+  }
+  header .container {
+    display: grid;
+  }
+  header .container a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  #home .container {
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 5rem;
+    height: 23rem;
+  }
+  #home .container .info .actions button {
+    margin-bottom: 0.5rem;
+  }
+  #home .container .image {
+    justify-content: center;
+  }
+  #home .container .image figure {
+    width: 80%;
+  }
+
+  #about {
+    margin: 5rem 0;
+  }
+  #about .container {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+    /*100%*/
+    /*90%*/
+    /*80%*/
+    /*75%*/
+    /*70%*/
+    /*50%*/
+    /*40%*/
+    /*10%*/
+  }
+  #about .container .oneHundred {
+    width: 0rem;
+  }
+  #about .container .oneHundred-final {
+    width: 15rem;
+    transition: all 2s ease;
+  }
+  #about .container .ninety {
+    width: 0rem;
+  }
+  #about .container .ninety-final {
+    width: 13.5rem;
+    transition: all 2s ease;
+  }
+  #about .container .eigthy {
+    width: 0rem;
+  }
+  #about .container .eigthy-final {
+    width: 12rem;
+    transition: all 2s ease;
+  }
+  #about .container .seventyFive {
+    width: 0rem;
+  }
+  #about .container .seventyFive-final {
+    width: 11.25rem;
+    transition: all 2s ease;
+  }
+  #about .container .seventy {
+    width: 0rem;
+  }
+  #about .container .seventy-final {
+    width: 10.5rem;
+    transition: all 2s ease;
+  }
+  #about .container .fifty {
+    width: 0rem;
+  }
+  #about .container .fifty-final {
+    width: 7.5rem;
+    transition: all 2s ease;
+  }
+  #about .container .forty {
+    width: 0rem;
+  }
+  #about .container .forty-final {
+    width: 6rem;
+    transition: all 2s ease;
+  }
+  #about .container .ten {
+    width: 0rem;
+  }
+  #about .container .ten-final {
+    width: 1.5rem;
+    transition: all 2s ease;
+  }
 }
 /*# sourceMappingURL=index.41e4b3cf.css.map */
